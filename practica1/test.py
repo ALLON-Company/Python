@@ -35,5 +35,5 @@ class ServicioTest(TestCase):
         self.assertEqual(pago.user_cuenta, "prueba")
 
     def test_transferencia(self):
-        transfer = Transferencia.objects.get(user_cuenta = "usuario11")
+        transfer = Transferencia.objects.get(user_cuenta = "usuario1")
         self.assertIsNotNone(transfer.user_cuenta2)
